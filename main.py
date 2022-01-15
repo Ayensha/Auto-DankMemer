@@ -43,6 +43,13 @@ async def help(ctx):
         "https://c.tenor.com/rvYiscAk_kAAAAAC/anime-welcome.gif"
     )
     await ctx.send(embed=embed)
+    
+@bot.command()
+async def stopautodank(ctx):
+    await ctx.message.delete()
+    await ctx.send('auto OwO Magi is now **disabled**!')
+    global dmcs
+    dmcs = False
 
 
 @bot.command(pass_context=True)
