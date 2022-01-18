@@ -25,6 +25,13 @@ bot = commands.Bot(command_prefix=prefix,
                    case_insensitive=True,
                    self_bot=True)
 
+@bot.command()
+async def stopautoOwO(ctx):
+    await ctx.message.delete()
+    await ctx.send('auto OwO Magi is now **disabled**!')
+    global dmcs
+    dmcs = False
+
 
 
 
@@ -981,12 +988,7 @@ async def autodank(ctx):
             print(f"{Fore.GREEN}succefully sent pls dep all")
             await asyncio.sleep(3600)
 
-@bot.command()
-async def stopautoOwO(ctx):
-    await ctx.message.delete()
-    await ctx.send('auto OwO Magi is now **disabled**!')
-    global dmcs
-    dmcs = False
+
             
 
             
