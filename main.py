@@ -47,6 +47,13 @@ async def help(ctx):
     await ctx.send(embed=embed)
 
 
+bot.command(pass_context=True)
+async def stopautodank(ctx):
+    await ctx.message.delete()
+    await ctx.send('**Stopped AutoDAnk**')
+    global dmcs
+    dmcs = False
+
 
 
 @bot.command(pass_context=True)
