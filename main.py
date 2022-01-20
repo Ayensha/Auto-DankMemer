@@ -25,12 +25,7 @@ bot = commands.Bot(command_prefix=prefix,
                    case_insensitive=True,
                    self_bot=True)
 
-@bot.command()
-async def stopautoOwO(ctx):
-    await ctx.message.delete()
-    await ctx.send('auto OwO Magi is now **disabled**!')
-    global dmcs
-    dmcs = False
+
 
 
 
@@ -43,7 +38,7 @@ async def help(ctx):
         title="Help",
         color=435436,
         description=
-        f"{prefix}autodank**\npls fish, pls dig, pls hunt, pls beg and pls dep all seconds.\n\n**{prefix}stopautodank**\nstops stopsautodank.\n\n**{prefix}banbypass**\n Bypasses dankmember compltely:✅ \n It's also safe to use` \n\n Made by [funnygamer2.OYT]/"
+        f"{prefix}autodank**\npls fish, pls dig, pls hunt, pls beg and pls dep all seconds.\n\n**{prefix}stopautodank**\n Removed this because it was creating an error in your bot .\n\n**{prefix}banbypass**\n Bypasses dankmember compltely:✅ \n It's also safe to use` \n\n Made by [funnygamer2.OYT]/"
     )
     embed.set_thumbnail(
         url=
