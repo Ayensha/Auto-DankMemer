@@ -4,21 +4,14 @@ import colorama
 from colorama import Fore
 import asyncio
 from webserver import keep_alive
-
-
 import os
 
-#-----SETUP-----#
-
 prefix = "$$"
-
-#use the .env feature to hide your token
-
 
 keep_alive()
 token = os.getenv("token")
 
-#---------------#
+
 
 bot = commands.Bot(command_prefix=prefix,
                    help_command=None,
@@ -28,30 +21,35 @@ bot = commands.Bot(command_prefix=prefix,
 
 
 
-
-
-
-
 @bot.command()
 async def help(ctx):
     embed = discord.Embed(
-        title="Help",
+        title="Help AutoDank",
         color=435436,
         description=
-        f"{prefix}autodank**\npls fish, pls dig, pls hunt, pls beg and pls dep all seconds.\n\n**{prefix}stopautodank**\n Removed this because it was creating an error in your bot .\n\n**{prefix}banbypass**\n Bypasses dankmember compltely:✅ \n It's also safe to use` \n\n Made by [funnygamer2.OYT]/"
+        f"{prefix}**autodank**\npls fish, pls dig, pls hunt, pls beg, pls dep all.\n\n**{prefix}stopautoOwO** Stops the bot\n It bypasses ban completely"
     )
     embed.set_thumbnail(
         url=
-        "https://c.tenor.com/rvYiscAk_kAAAAAC/anime-welcome.gif"
+        "https://c.tenor.com/LDuF2jVabwoAAAAS/banner-welcome.gif"
     )
     await ctx.send(embed=embed)
+    await asyncio.sleep(5)
+    await ctx.message.delete()
 
+
+@bot.command()
+async def stopautoOwO(ctx):
+    await ctx.message.delete()
+    await ctx.send('**AutoDank is now Disabled 😊**')
+    global dmcs
+    dmcs = False
 
 
 @bot.command(pass_context=True)
 async def autodank(ctx):
     await ctx.message.delete()
-    await ctx.send('auto Dank  is now **enabled**!')
+    await ctx.send('**AutoDank is now Enabled 😊**')
     global dmcs
     dmcs = True
     while dmcs:
