@@ -418,6 +418,7 @@ async def autodank(ctx):
             await asyncio.sleep(1)
             await ctx.send('pls dep all')
             print(f"{Fore.GREEN}succefully sent pls dep all")
+            print(f"{Fore.GREEN}Break for 30 mins")
             await asyncio.sleep(1800)
             await ctx.send('pls fish')
             print(f"{Fore.GREEN}succefully sent pls fish")
@@ -586,6 +587,7 @@ async def autodank(ctx):
             await asyncio.sleep(1)
             await ctx.send('pls dep all')
             print(f"{Fore.GREEN}succefully sent pls dep all")
+            print(f"{Fore.GREEN}Break for 30 mins")
             await asyncio.sleep(1800)
             await ctx.send('pls fish')
             print(f"{Fore.GREEN}succefully sent pls fish")
@@ -782,7 +784,8 @@ async def autodank(ctx):
             await asyncio.sleep(1)
             await ctx.send('pls dep all')
             print(f"{Fore.GREEN}succefully sent pls dep all")
-            await asyncio.sleep(18000)
+            print(f"{Fore.GREEN}Break for 30 mins")
+            await asyncio.sleep(1800)
             await ctx.send('pls fish')
             print(f"{Fore.GREEN}succefully sent pls fish")
             await asyncio.sleep(1)
@@ -978,6 +981,7 @@ async def autodank(ctx):
             await asyncio.sleep(1)
             await ctx.send('pls dep all')
             print(f"{Fore.GREEN}succefully sent pls dep all")
+            print(f"{Fore.GREEN}Break for an hour")
             await asyncio.sleep(3600)
 
 
