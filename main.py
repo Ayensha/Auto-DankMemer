@@ -27,7 +27,7 @@ async def help(ctx):
         title="Help AutoDank",
         color=435436,
         description=
-        f"{prefix}**autodank**\npls fish, pls dig, pls hunt, pls beg, pls dep all.\n\n**{prefix}stopautoOwO** Stops the bot\n It bypasses ban completely"
+        f"{prefix}**autodank**\npls fish, pls dig, pls hunt, pls beg, pls dep all.\n\n**{prefix}stopautodank** Stops the bot\n It bypasses ban completely"
     )
     embed.set_thumbnail(
         url=
@@ -39,7 +39,7 @@ async def help(ctx):
 
 
 @bot.command()
-async def stopautoOwO(ctx):
+async def stopautodank(ctx):
     await ctx.message.delete()
     await ctx.send('**AutoDank is now Disabled 😊**')
     global dmcs
