@@ -20,12 +20,10 @@ bot = commands.Bot(command_prefix=prefix,
 
 
 
-
 @bot.command()
-async def help(ctx):
+async def helpdank(ctx):
     await ctx.message.delete()
     await ctx.send('**$$AutoDank: Pls beg, Pls dig, Pls fish, pls hunt, dep all. $$StopAutoDank: Stops the bot. This code can bypass ban**')
-
 
 @bot.command()
 async def stopautodank(ctx):
