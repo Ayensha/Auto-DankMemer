@@ -23,19 +23,8 @@ bot = commands.Bot(command_prefix=prefix,
 
 @bot.command()
 async def help(ctx):
-    embed = discord.Embed(
-        title="Help AutoDank",
-        color=435436,
-        description=
-        f"{prefix}**autodank**\npls fish, pls dig, pls hunt, pls beg, pls dep all.\n\n**{prefix}stopautodank** Stops the bot\n It bypasses ban completely"
-    )
-    embed.set_thumbnail(
-        url=
-        "https://c.tenor.com/LDuF2jVabwoAAAAS/banner-welcome.gif"
-    )
-    await ctx.send(embed=embed)
-    await asyncio.sleep(5)
     await ctx.message.delete()
+    await ctx.send('**$$AutoDank: Pls beg, Pls dig, Pls fish, pls hunt, dep all. $$StopAutoDank: Stops the bot. This code can bypass ban**')
 
 
 @bot.command()
