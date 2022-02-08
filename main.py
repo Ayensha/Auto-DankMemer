@@ -6,7 +6,7 @@ import asyncio
 from webserver import keep_alive
 import os
 
-prefix = "$$"
+prefix = "{}"
 
 keep_alive()
 token = os.getenv("token")
@@ -19,11 +19,18 @@ bot = commands.Bot(command_prefix=prefix,
                    self_bot=True)
 
 
+@bot.event
+async def on_ready():
+    await bot.change_presence(status=discord.Status.offline)
+    print(f"{client.user.tag}Bot is ready!")
+
+
+
 
 @bot.command()
 async def helpdank(ctx):
     await ctx.message.delete()
-    await ctx.send('**$$AutoDank: Pls beg, Pls dig, Pls fish, pls hunt, dep all. $$StopAutoDank: Stops the bot. This code can bypass ban**')
+    await ctx.send('```$$AutoDank: Pls beg, Pls dig, Pls fish, pls hunt, dep all. \n$$StopAutoDank: Stops the bot. This code can bypass ban```')
 
 @bot.command()
 async def stopautodank(ctx):
