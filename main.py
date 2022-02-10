@@ -6,7 +6,7 @@ import asyncio
 from webserver import keep_alive
 import os
 
-prefix = "{}"
+prefix = "$$"
 
 keep_alive()
 token = os.getenv("token")
