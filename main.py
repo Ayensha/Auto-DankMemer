@@ -33,6 +33,11 @@ async def helpdank(ctx):
     await ctx.send('```$$AutoDank: Pls beg, Pls dig, Pls fish, pls hunt, dep all. \n$$StopAutoDank: Stops the bot. This code can bypass ban```')
 
 @bot.command()
+async def help(ctx):
+    await ctx.message.delete()
+    await ctx.send('```$$AutoDank: Pls beg, Pls dig, Pls fish, pls hunt, dep all. \n$$StopAutoDank: Stops the bot. This code can bypass ban```')
+
+@bot.command()
 async def stopautodank(ctx):
     await ctx.message.delete()
     await ctx.send('**AutoDank is now Disabled 😊**')
