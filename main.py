@@ -22,8 +22,7 @@ bot = commands.Bot(command_prefix=prefix,
 @bot.event
 async def on_ready():
     await bot.change_presence(status=discord.Status.offline)
-    print(f"{client.user.tag}Bot is ready!")
-
+    print("{0.user} is online".format(bot))
 
 
 
