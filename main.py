@@ -11,7 +11,7 @@ prefix = "$$"
 keep_alive()
 token = os.getenv("token")
 
-
+#
 
 bot = commands.Bot(command_prefix=prefix,
                    help_command=None,
