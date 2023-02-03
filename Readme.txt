@@ -1,3 +1,7 @@
-THE PROJECT HAS BEEN DISCONTINUED
+# discontinued-the-project
+![image](https://user-images.githubusercontent.com/97728392/216627821-de76efa8-e23a-460c-8b3b-bfb8ee0db5fc.png)
+Fastest dank memer bot ever created u might get banned
+Do not use it for illegal purposes 
 
-![image](https://user-images.githubusercontent.com/97728392/216625888-b3c25ad9-baad-4568-82cb-13ab93a9d615.png)
+And don't steal the credits 
+
